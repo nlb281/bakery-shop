@@ -169,3 +169,4 @@ C:\Users\dsonin\RiderProjects\bakeryShop\bakeryShop\obj\Debug\net9.0\refint\bake
 C:\Users\dsonin\RiderProjects\bakeryShop\bakeryShop\obj\Debug\net9.0\bakeryShop.pdb
 C:\Users\dsonin\RiderProjects\bakeryShop\bakeryShop\obj\Debug\net9.0\bakeryShop.genruntimeconfig.cache
 C:\Users\dsonin\RiderProjects\bakeryShop\bakeryShop\obj\Debug\net9.0\ref\bakeryShop.dll
+C:\Users\dsonin\RiderProjects\bakeryShop\bakeryShop\obj\Debug\net9.0\bakeryShop.sourcelink.json

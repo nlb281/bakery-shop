@@ -3,6 +3,7 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="bakeryShop/Views/Auth.axaml" value="bakeryShop/bakeryShop.csproj" />
         <entry key="bakeryShop/Views/MainWindow.axaml" value="bakeryShop/bakeryShop.csproj" />
       </map>
     </option>
