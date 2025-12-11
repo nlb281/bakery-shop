@@ -7,13 +7,18 @@ using bakeryShop.ViewModels;
 
 namespace bakeryShop.Views;
 
-public partial class Auth : Window
+public partial class InputOrderedQuantity : Window
 {
-    AuthViewModel vm =  new AuthViewModel();
-    public Auth()
+    private InputOrderedQuantityViewModel vm = new InputOrderedQuantityViewModel();
+    public InputOrderedQuantity()
     {
         InitializeComponent();
         DataContext = vm;
         StaticFields.oldWindow = this;
+    }
+    
+    public void ConfirmOrder(object sender, RoutedEventArgs e)
+    {
+        vm.ConfirmOrder(sender, e);
     }
 }

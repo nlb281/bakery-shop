@@ -170,3 +170,10 @@ C:\Users\dsonin\RiderProjects\bakeryShop\bakeryShop\obj\Debug\net9.0\bakeryShop.
 C:\Users\dsonin\RiderProjects\bakeryShop\bakeryShop\obj\Debug\net9.0\bakeryShop.genruntimeconfig.cache
 C:\Users\dsonin\RiderProjects\bakeryShop\bakeryShop\obj\Debug\net9.0\ref\bakeryShop.dll
 C:\Users\dsonin\RiderProjects\bakeryShop\bakeryShop\obj\Debug\net9.0\bakeryShop.sourcelink.json
+C:\Users\dsonin\RiderProjects\bakeryShop\bakeryShop\bin\Debug\net9.0\DialogHost.Avalonia.dll
+C:\Users\dsonin\RiderProjects\bakeryShop\bakeryShop\bin\Debug\net9.0\MsBox.Avalonia.dll
+C:\Users\dsonin\RiderProjects\bakeryShop\bakeryShop\bin\Debug\net9.0\DynamicData.dll
+C:\Users\dsonin\RiderProjects\bakeryShop\bakeryShop\bin\Debug\net9.0\ReactiveUI.dll
+C:\Users\dsonin\RiderProjects\bakeryShop\bakeryShop\bin\Debug\net9.0\Splat.dll
+C:\Users\dsonin\RiderProjects\bakeryShop\bakeryShop\bin\Debug\net9.0\System.Reactive.dll
+C:\Users\dsonin\RiderProjects\bakeryShop\bakeryShop\bin\Debug\net9.0\System.Reactive.xml

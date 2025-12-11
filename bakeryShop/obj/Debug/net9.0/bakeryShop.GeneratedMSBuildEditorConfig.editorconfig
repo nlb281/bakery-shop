@@ -34,3 +34,12 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
 [C:/Users/dsonin/RiderProjects/bakeryShop/bakeryShop/Views/Auth.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/dsonin/RiderProjects/bakeryShop/bakeryShop/Views/InputOrderedQuantity.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/dsonin/RiderProjects/bakeryShop/bakeryShop/Views/SalesManagement.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/dsonin/RiderProjects/bakeryShop/bakeryShop/Views/Stock.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

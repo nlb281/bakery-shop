@@ -7,4 +7,5 @@ public class StaticFields
     public static BakeryShopContext context = new BakeryShopContext();
     public static Employee employee;
     public static Window? oldWindow, window;
+    public static Product productInfo;
 }

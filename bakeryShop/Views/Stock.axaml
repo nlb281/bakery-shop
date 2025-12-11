@@ -1,0 +1,51 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:bakeryShop.ViewModels"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
+        x:Class="bakeryShop.Views.Stock"
+        x:DataType="vm:StockViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Stock"
+        Width="800"
+        Height="600">
+        <Grid RowDefinitions="50, *, 50">
+                <StackPanel Grid.Row="0"  VerticalAlignment="Center">
+                    <Button Click="OpenSalesManagementWindow"
+                            Content="Оформить заказ" 
+                            Width="150" 
+                            FontSize="15" 
+                            FontWeight="500" 
+                            HorizontalAlignment="Right"
+                            HorizontalContentAlignment="Center" 
+                            VerticalContentAlignment="Center"
+                            Background="#242121"
+                            Foreground="#fff"
+                            Padding="8"
+                            Margin="0 0 15 0"/>
+                </StackPanel>
+                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto"
+                              HorizontalScrollBarVisibility="Disabled">
+                        <StackPanel>
+                            <TextBlock Text="Каталог товаров" 
+                                       FontSize="24" 
+                                       FontWeight="Bold"
+                                       Margin="15,0,0,15"/>
+                            <ListBox Background="#fff" ItemsSource="{Binding Products}">
+                                        <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                        <Border Background="#FCE4EC" CornerRadius="8" Padding="15">
+                                                                <Grid ColumnDefinitions="*,*,*" HorizontalAlignment="Stretch">
+                                                                        <TextBlock Grid.Column="0" FontSize="16" Text="{Binding Name, StringFormat=🥯 {0}}"/>
+                                                                        <TextBlock Grid.Column="1" FontSize="16" Text="{Binding Price, StringFormat=Цена: {0} руб.}"/>
+                                                                        <TextBlock Grid.Column="2" FontSize="16"  Text="{Binding Quantity, StringFormat=Количество: {0} шт.}"/>
+                                                                </Grid>
+                                                        </Border>
+                                                </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                            </ListBox>
+                        </StackPanel>
+                </ScrollViewer>
+        </Grid>
+</Window>

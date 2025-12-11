@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using ReactiveUI;
 
 namespace bakeryShop.Models;
 
-public partial class Product
+public partial class Product : ReactiveObject
 {
     public int Id { get; set; }
 

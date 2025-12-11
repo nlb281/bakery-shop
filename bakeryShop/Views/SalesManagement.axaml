@@ -1,0 +1,76 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:bakeryShop.ViewModels"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
+        x:Class="bakeryShop.Views.SalesManagement"
+        x:DataType="vm:SalesManagementViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="SalesManagement"
+        Width="800"
+        Height="600">
+    <Grid RowDefinitions="50, *, 50">
+                <StackPanel Grid.Row="0"  VerticalAlignment="Center">
+                        <Button 
+                                Click="GoBack"
+                                Content="Назад" 
+                                Width="150"  
+                                FontSize="15" 
+                                FontWeight="500" 
+                                HorizontalAlignment="Right"
+                                HorizontalContentAlignment="Center" 
+                                VerticalContentAlignment="Center"
+                                Background="#242121"
+                                Foreground="#fff"
+                                Padding="8"
+                                Margin="0 0 15 0"/>
+                </StackPanel>
+                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto"
+                              HorizontalScrollBarVisibility="Disabled">
+                        <StackPanel>
+                            <TextBlock Text="Оформление заказа" 
+                                       FontSize="24" 
+                                       FontWeight="Bold"
+                                       Margin="15,0,0,15"/>
+                            <ListBox Background="#fff" ItemsSource="{Binding Products}">
+                                    <ListBox.ItemsPanel>
+                                            <ItemsPanelTemplate>
+                                                    <UniformGrid Columns="3" 
+                                                                 Rows="0" 
+                                                                 FirstColumn="0"/>
+                                            </ItemsPanelTemplate>
+                                    </ListBox.ItemsPanel>
+                                    <ListBox.ItemTemplate>
+                                            <DataTemplate>
+                                                    <Border  Background="#FCE4EC" CornerRadius="8" Padding="35" Width="250">
+                                                            <StackPanel Orientation="Vertical" Spacing="15" HorizontalAlignment="Center">
+                                                                    <TextBlock HorizontalAlignment="Center" FontSize="16" Text="{Binding Name, StringFormat='🥯 {0}'}" 
+                                                                               FontWeight="Bold"/>
+
+                                                                    <TextBlock HorizontalAlignment="Center" FontSize="16" Text="{Binding Price, StringFormat='Цена: {0} руб.'}" />
+
+                                                                    <TextBlock HorizontalAlignment="Center" FontSize="16" Text="{Binding Quantity, StringFormat='Остаток: {0} шт.'}" 
+                                                                               Foreground="#373a39"/>
+                                                                    <Button 
+                                                                            Click="CreateOrder"
+                                                                            Content="Оформить" 
+                                                                            Width="150"  
+                                                                            FontSize="15" 
+                                                                            FontWeight="500" 
+                                                                            HorizontalAlignment="Right"
+                                                                            HorizontalContentAlignment="Center" 
+                                                                            VerticalContentAlignment="Center"
+                                                                            Background="#242121"
+                                                                            Foreground="#fff"
+                                                                            Padding="8"
+                                                                            Margin="0 0 15 0"/>
+                                                            </StackPanel>
+                                                    </Border>
+                                            </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                            </ListBox>
+                        </StackPanel>
+                </ScrollViewer>
+        </Grid>
+</Window>

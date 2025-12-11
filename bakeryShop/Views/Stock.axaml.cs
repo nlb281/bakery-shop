@@ -7,13 +7,18 @@ using bakeryShop.ViewModels;
 
 namespace bakeryShop.Views;
 
-public partial class Auth : Window
+public partial class Stock : Window
 {
-    AuthViewModel vm =  new AuthViewModel();
-    public Auth()
+    StockViewModel vm =  new StockViewModel();
+    public Stock()
     {
         InitializeComponent();
         DataContext = vm;
         StaticFields.oldWindow = this;
+    }
+    
+    public void OpenSalesManagementWindow(object sender, RoutedEventArgs e)
+    {
+        vm.OpenSalesManagementWindow(sender, e);
     }
 }
