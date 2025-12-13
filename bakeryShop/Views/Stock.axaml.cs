@@ -21,4 +21,9 @@ public partial class Stock : Window
     {
         vm.OpenSalesManagementWindow(sender, e);
     }
+    
+    public void OpenAddProductWindow(object sender, RoutedEventArgs e)
+    {
+        vm.OpenAddProductWindow(sender, e);
+    }
 }

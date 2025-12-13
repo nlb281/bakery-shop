@@ -4,6 +4,7 @@
     <option name="projectPerEditor">
       <map>
         <entry key="bakeryShop/App.axaml" value="bakeryShop/bakeryShop.csproj" />
+        <entry key="bakeryShop/Views/AddProduct.axaml" value="bakeryShop/bakeryShop.csproj" />
         <entry key="bakeryShop/Views/Auth.axaml" value="bakeryShop/bakeryShop.csproj" />
         <entry key="bakeryShop/Views/InputOrderedQuantity.axaml" value="bakeryShop/bakeryShop.csproj" />
         <entry key="bakeryShop/Views/MainWindow.axaml" value="bakeryShop/bakeryShop.csproj" />

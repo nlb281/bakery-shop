@@ -5,6 +5,8 @@ using Avalonia.Interactivity;
 using bakeryShop.Models;
 using bakeryShop.Views;
 using Microsoft.EntityFrameworkCore;
+using MsBox.Avalonia;
+using MsBox.Avalonia.Enums;
 using ReactiveUI;
 
 namespace bakeryShop.ViewModels;
@@ -48,6 +50,25 @@ public class StockViewModel : ViewModelBase
         
         (new SalesManagement()).Show();
         StaticFields.window.Close();
+    }
+    
+    public void OpenAddProductWindow(object sender, RoutedEventArgs e)
+    {
+        if (StaticFields.employee.Roleid != 2)
+        {
+            MessageBoxManager
+                .GetMessageBoxStandard("Ошибка", "Нужно зайти под Админом", ButtonEnum.Ok)
+                .ShowWindowAsync();
+            StaticFields.window = StaticFields.oldWindow;
+        }
+        else
+        {
+            StaticFields.window = StaticFields.oldWindow;
+            (new AddProduct()).Show();
+            StaticFields.window.Close();
+        }
+        
+
         
     }
 }

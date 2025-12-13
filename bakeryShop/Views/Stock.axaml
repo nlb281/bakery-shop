@@ -11,19 +11,31 @@
         Width="800"
         Height="600">
         <Grid RowDefinitions="50, *, 50">
-                <StackPanel Grid.Row="0"  VerticalAlignment="Center">
-                    <Button Click="OpenSalesManagementWindow"
-                            Content="Оформить заказ" 
-                            Width="150" 
-                            FontSize="15" 
-                            FontWeight="500" 
-                            HorizontalAlignment="Right"
-                            HorizontalContentAlignment="Center" 
-                            VerticalContentAlignment="Center"
-                            Background="#242121"
-                            Foreground="#fff"
-                            Padding="8"
-                            Margin="0 0 15 0"/>
+                <StackPanel Grid.Row="0" Orientation="Horizontal"  HorizontalAlignment="Right">
+                        <Button Click="OpenAddProductWindow"
+                                Content="Добавить/Редактировать товар" 
+                                Width="270" 
+                                FontSize="15" 
+                                FontWeight="500" 
+                                HorizontalAlignment="Right"
+                                HorizontalContentAlignment="Center" 
+                                VerticalContentAlignment="Center"
+                                Background="#242121"
+                                Foreground="#fff"
+                                Padding="8"
+                                Margin="0 0 15 0"/>
+                        <Button Click="OpenSalesManagementWindow"
+                                Content="Оформить заказ" 
+                                Width="150" 
+                                FontSize="15" 
+                                FontWeight="500" 
+                                HorizontalAlignment="Right"
+                                HorizontalContentAlignment="Center" 
+                                VerticalContentAlignment="Center"
+                                Background="#242121"
+                                Foreground="#fff"
+                                Padding="8"
+                                Margin="0 0 15 0"/>
                 </StackPanel>
                 <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto"
                               HorizontalScrollBarVisibility="Disabled">
@@ -48,7 +60,7 @@
                             </ListBox>
                         </StackPanel>
                         <StackPanel>
-                                <TextBlock Text="Продажи" 
+                                <TextBlock Text="Продажи"
                                            FontSize="24" 
                                            FontWeight="Bold"
                                            Margin="15,0,0,15"/>

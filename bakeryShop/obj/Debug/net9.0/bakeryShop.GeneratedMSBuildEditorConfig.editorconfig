@@ -32,6 +32,9 @@ build_property.EnableCodeStyleSeverity =
 [C:/Users/dsonin/RiderProjects/bakeryShop/bakeryShop/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/dsonin/RiderProjects/bakeryShop/bakeryShop/Views/AddProduct.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/dsonin/RiderProjects/bakeryShop/bakeryShop/Views/Auth.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
