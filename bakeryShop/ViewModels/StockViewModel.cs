@@ -4,6 +4,7 @@ using Avalonia.Controls;
 using Avalonia.Interactivity;
 using bakeryShop.Models;
 using bakeryShop.Views;
+using Microsoft.EntityFrameworkCore;
 using ReactiveUI;
 
 namespace bakeryShop.ViewModels;
@@ -11,10 +12,16 @@ namespace bakeryShop.ViewModels;
 public class StockViewModel : ViewModelBase
 {
     private List<Product> products = new List<Product>();
-    private List<Sale> receipts = new List<Sale>();
+    private List<Sale> sales = new List<Sale>();
+    private List<Product> saledProducts = new List<Product>();
     public StockViewModel()
     {
         Products = StaticFields.context.Products.ToList();
+        Sales = StaticFields.context.Sales
+            .Include(s => s.Product)
+            .ToList();
+        
+        
     }
 
     public List<Product> Products
@@ -23,10 +30,16 @@ public class StockViewModel : ViewModelBase
         set => this.RaiseAndSetIfChanged(ref products, value);
     }
 
-    public List<Sale> Receipts
+    public List<Sale> Sales
     {
-        get => receipts;
-        set => this.RaiseAndSetIfChanged(ref receipts, value);
+        get => sales;
+        set => this.RaiseAndSetIfChanged(ref sales, value);
+    }
+
+    public List<Product> SaledProducts
+    {
+        get => saledProducts;
+        set => this.RaiseAndSetIfChanged(ref saledProducts, value);
     }
 
     public void OpenSalesManagementWindow(object sender, RoutedEventArgs e)

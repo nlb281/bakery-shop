@@ -5,6 +5,7 @@
       <map>
         <entry key="bakeryShop/App.axaml" value="bakeryShop/bakeryShop.csproj" />
         <entry key="bakeryShop/Views/Auth.axaml" value="bakeryShop/bakeryShop.csproj" />
+        <entry key="bakeryShop/Views/InputOrderedQuantity.axaml" value="bakeryShop/bakeryShop.csproj" />
         <entry key="bakeryShop/Views/MainWindow.axaml" value="bakeryShop/bakeryShop.csproj" />
         <entry key="bakeryShop/Views/SalesManagement.axaml" value="bakeryShop/bakeryShop.csproj" />
         <entry key="bakeryShop/Views/Stock.axaml" value="bakeryShop/bakeryShop.csproj" />

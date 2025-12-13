@@ -28,6 +28,7 @@
                 <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto"
                               HorizontalScrollBarVisibility="Disabled">
                         <StackPanel>
+                              <StackPanel>
                             <TextBlock Text="Каталог товаров" 
                                        FontSize="24" 
                                        FontWeight="Bold"
@@ -45,6 +46,26 @@
                                                 </DataTemplate>
                                         </ListBox.ItemTemplate>
                             </ListBox>
+                        </StackPanel>
+                        <StackPanel>
+                                <TextBlock Text="Продажи" 
+                                           FontSize="24" 
+                                           FontWeight="Bold"
+                                           Margin="15,0,0,15"/>
+                                <ListBox Background="#fff" ItemsSource="{Binding Sales}">
+                                        <ListBox.ItemTemplate>
+                                                <DataTemplate>
+                                                        <Border Background="#FCE4EC" CornerRadius="8" Padding="15">
+                                                                <Grid ColumnDefinitions="*,*,*" HorizontalAlignment="Stretch">
+                                                                        <TextBlock Grid.Column="0" FontSize="16" Text="{Binding Product.Name, StringFormat=🥯 {0}}"/>
+                                                                        <TextBlock Grid.Column="1" FontSize="16" Text="{Binding Totalprice, StringFormat=Цена: {0} руб.}"/>
+                                                                        <TextBlock Grid.Column="2" FontSize="16"  Text="{Binding Quantity, StringFormat=Количество: {0} шт.}"/>
+                                                                </Grid>
+                                                        </Border>
+                                                </DataTemplate>
+                                        </ListBox.ItemTemplate>
+                                </ListBox>
+                        </StackPanel>  
                         </StackPanel>
                 </ScrollViewer>
         </Grid>
